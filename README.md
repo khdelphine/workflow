@@ -1,6 +1,8 @@
 # DataRescue Workflow -- Overview
 
-This document describes the workflow we use for the [DataRefuge project](http://www.ppehlab.org/), both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified by a [seeder & sorter](seednsort.md) as "uncrawlable" until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves several distinct stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.
+# DataRescue Workflow -- Overview
+
+This document describes the workflow our coalition use for the **Data Rescue project**, both at in-person events and when people work remotely. It explains the process that a url/dataset goes through from the time it has been identified by a [seeder & sorter](seednsort.md) as "uncrawlable", until it is made available as a record in the [datarefuge.org](http://www.datarefuge.org) ckan data catalog. The process involves several distinct stages, and is designed to maximize smooth hand-offs so that each phase is handled by someone with distinct expertise in the area they're tackling, while the data is always being tracked for security.
 
 ## Before you begin
 We are so glad that you are participating in this project!
@@ -39,5 +41,4 @@ Baggers do some quality assurance on the dataset to make sure the content is cor
 Describers creates a descriptive record in the DataRefuge CKAN repository for each bag. Then they links the record to the bag, and make the record public
 **********************
 ## Partners
-Data Rescue is a broad, grassroots effort with support from numerous local and nationwide networks. [DateRefuge](http://www.ppehlab.org/datarefuge/) thanks [EDGI](https://envirodatagov.org/) in particular for their contributions, and to our numerous supporters for their hard work. See more of our institutional partners on our [home page](http://www.ppehlab.org/datarefuge#partners).
-
+Data Rescue is a broad, grassroots effort with support from numerous local and nationwide networks. Thanks particularly to [EDGI](https://envirodatagov.org/) and [Date Refuge](http://www.ppehlab.org/datarefuge/) for their leadershp, and to our numerous supporters for their hard work.

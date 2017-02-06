@@ -1,88 +1,30 @@
 # RESEARCH
 
-## What do Researchers do?
-Researchers inspect the "uncrawlable" list to confirm that seeders' assessments were correct (that is, that the URL/dataset is indeed uncrawlable), and investigate how the dataset could be best harvested.
+You need to be logged in to the app to follow this! Your event co-ordinators should have given you instructions about how to get an invite; or look in your event-specific repo (usually named "DataRescuePLACENAME") within this github organization.
 
-## Getting set up as a Researcher
- - Apply to become a Researcher 
-    - By asking your DataRescue guide or by filling out [this form](Link coming soon) 
-    - Skills recommended: in general, Researchers need to have a good understanding of harvesting goals and have some familiarity with datasets. Ideally they would understand how federal data is organized (e.g. where the "master" datasets are vs. the derived partial views of those datasets.
-    - Note that an email address is required to apply.
-  - Uncrawlable spreadsheet URL, slack invite, and other details will be provided once your application is approved.
-  - Verify that you have write access to the Researchers/Harvesters tab in the Uncrawlable spreadsheet
-  - If you need any assistance:
-    - Talk to your DataRescue Guide if you are at an in-person event
-    - Or post questions on Slack in the #Researchers/Harvesters channel.
-    
-## Researchers and Harvesters
-- Researchers and Harvesters should work very closely together as their work will feed from each other and much communication is needed between the two roles.
-- For instance they could work in pairs or in small groups. 
-  - In some cases, a single person might be both a Researcher and a Harvester.
-- Note that in the Uncrawlable Action spreadsheet, Researchers and Harvesters share the same tab.
-- As a Researcher, make sure to check out the [Harvesters documentation](harvesting-toolkit) to familiarize yourself with their role.
+## Step 1: Claiming a dataset to research
 
-## Claiming a dataset to harvest
+As soon as they're seeded by the seeding group, URL's get added to the [Data rescue Archivers App](https://www.archivers.space). "Research" is the first phase of this process. Scroll or search through the list for a URL that seems appropriate (to your area of expertise, topical focus of the day's event, etc.). Make sure the URL has not been "checked out" by anyone else -- the `user` field should be blank.
 
-- Researchers work on datasets that were listed as uncrawlable by Seeders.
-- Go to the Uncrawlable spreadsheet, click the Researchers/Harvesters tab, and look for a dataset to harvest
-  - Available datasets are the ones whose cell "Researcher Handle" is empty
-  - If an item is already claimed but its "Date Opened or Closed" cell has turned red, it is also available for you to claim (for more details see the last section of this document)
-    - Claim it by entering your slack handle along with the status "Open" and today's date, for instance: 
-    ```
-    @khdelphine Open 1/22/2017
-    ```
-- You will find the URL you are about to evaluate in the "Original URL" cell.
+Click on the `URL` field to inspect the URL & learn enough about it to answer the questions in this section. Click on the `UUID` field to be brought to the app's record page for that URL, click the large blue `Checkout this URL` button, and begin working.
 
-## Evaluating the data
-Go to the URL, and start inspecting the content.
+## Step 2: Doing the research!
 
-## Is the data actually crawlable?
-Again, see [here](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
-and [here](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit)
-for a mostly non-technical introduction to the crawler. Some additional
-technical notes for answering this:
-- There is no specific file size cutoff on what is crawlable, but large files
-  should be manually captured anyway.
-- Files types like ZIP, PDF, Excel, etc. are crawlable if they are linked.
-- The crawler can only follow HTTP links that appear directly in the DOM at load
-  time. (That is, they should appear as `<a href ...>` tags in the page source.)
-  If links are added by Javascript or require submitting a form, they are
-  not crawlable.
-- The crawler does not tolerate web frames (but it straightforward to inspect
-  a page to obtain the content in the frame directly, and then nominate *that*).
-- The crawler recently added the ability to crawl FTP, but we will not rely on
-  this; we will treat resources served over FTP as uncrawlable.
+1. `Purpose/Significance of data`. Use this field to describe, as best you can, what the data on this page is for, and what makes it significant. If you don't know that much about the topic area, do your best. You should at lest be able to broadly describe the kind of dataset it is. 
+1. `Do not harvest`. Check this box if you think the seeder made an error, and that the data on this page is easily crawlable by the Internet Archive, **and also** has no particular intrinsiv calue as a separate collection. See [these](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
+and
+[two documents](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit) for more info on the IA webcrawler. 
+1. `Page contains dynamic content (e.g., links loaded by JavaScript).` Click this box if page content is generated within the browser environment by some kind of web application.  
+1. `Page contains interactive visualizations.` Click this box for complex UI such as maps, etc.
+1. `Data is accessible in structured file(s) that can be directly downloaded.` Click this box for document collections, etc.
+1. `Data is accessible over FTP.` Click this box to remove the URL from the workflow, and send it to the Internet Archive for their FTP crawl.
+1. `Data is accessible using a documented public API.` Describe API parameters if you can easily do so
+1. `Data is only accessible using search queries in a web form.` Self-explanatory...
+1. `Recommended Approach for Harvesting Data`. Add any recommendations for harvesting methods; see [the harvesting tools repo](https://github.com/edgi-govdata-archiving/harvesting-tools/) for some examples. 
+1. `File Formats`. Self-explanatory
+1. `Estimated size in MB` If you can estimate, do so.
+1. `Link Url`. This is cool. Sometimes a few, or even a large number, of URL's have been nominated spearately, but are really windows onto the same dataset. We want to scrape *all* of this data, and do it *exactly one time*. The `Link URL` field lets uou add a pattern to match on; all matching uRL's will now become part of a single record.
 
-What to do in each case:
+## Step 3: Marking Done, Saving the Record, Checking out
 
-- **YES**: If the URL is crawlable or you locate a crawlable URL that accesses the
-  underlying dataset:
-  - Nominate it: use our
-    [Chrome extension](https://chrome.google.com/webstore/detail/nominationtool/abjpihafglmijnkkoppbookfkkanklok),
-    and if that doesn't work then use the
-    [bookmarklet](http://digital2.library.unt.edu/nomination/eth2016/about/)
-  - Fill out the cell "Can it be crawled?" = "yes" in Uncrawlable spreadsheet
-  - Fill out cell "Seeded?" = "yes" and tell what URL you seeded. 
- - **NO**: If it is confirmed not crawlable:
-   - Fill out the cell "Can it be crawled?" = "no" in  Researcher section of the spreadsheet
-  - Search agency websites and data.gov for dataset entry points for your dataset collection   
-      - Tips: Try to understand what data sets are underlying the web pages. Look for related entries in the spreadsheet, and ensure that you aren't harvesting a subdirectory if you can harvest the entire directory. Often, data underlying dozens of pages or multiple "access portal" apps is also available as one structured data file.
-  - Add your suggested url for harvesting the data to spreadsheet (in cell "Harvestable Data"), REALLY IMPORTANT!
-  -  Also add other information in the spreadsheet that could help the Harvester, such as information about format (SQL, FTP, ZIP, PDF Collections, etc.), size, details about what you found, recommended approach, etc. 
-  - Search for related URLS in the spreadsheet that might be covered by the same approach so as not to duplicate work (in cell "URL duplicate UUID").
-- **YES AND NO**: for example, FTP address, mixed content, big data sets:
-   - Fill out the cell "Can it be crawled?" = "yes & no" in Researcher section of the spreadsheet
-  - Nominate it anyway, but follow the steps for uncrawlable content above.
-  - *While we understand that this may result in some dataset duplication, that is not a concern. We are ensuring that the data is fully preserved and accessible.*
-
-
-## Finishing up
-- In the Uncrawlable spreadsheet, change the status to "Closed" in the cell "Researcher: Current Status", for instance: 
-  ```
-  @khdelphine Closed 1/22/2017
-  ```
-    - If ever a day or more passed since you originally claimed the item, update the date to today's date. 
-    - Note that if more than 2 days have passed since you claimed the dataset and it is still not closed, the **Date field will turn red**, signaling that someone else can claim it in your place and start working on it
-      - This will avoid datasets being stuck in the middle of the workflow and not being finalized.
-      
-- You're done! Move on to the next URL!
+when you'refinished, mark the research as complete by clicking the grey checkbox on the same line as the "Research" section heading. Press the blue `Save` button at the bottom, and if you are not proceeding to harvest the data, the blue `Checkin this URL` button near the top of the page.

@@ -9,9 +9,7 @@ The Seeders/Sorters team will use the EDGI subprimer systems ([found here](https
 - Start exploring the website assigned, identifying important URLs. 
 - Decide whether the data on a page or website subsection can be [automatically captured by the Internet Archive webcrawler](./what-heritrix-does.md).
 - The best source of information about the seeding and sorting process is represented at [https://envirodatagov.org/](https://envirodatagov.org/).
-- See also [here](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
-  and
-  [here](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit)).
+- See also ["Understanding What theInternet Archive Webcrawler Does](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit) and [Seeding the IA's webcrawler](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit)).
  
 ## Using the NominationTool Chrome Extension
 

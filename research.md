@@ -11,10 +11,10 @@ Click on the `URL` field to inspect the URL & learn enough about it to answer th
 ## Step 2: Doing the research!
 
 - `Purpose/Significance of data`. Use this field to describe, as best you can, what the data on this page is for, and what makes it significant. If you don't know that much about the topic area, do your best. You should at lest be able to broadly describe the kind of dataset it is. 
-- `Do not harvest`. Check this box if you think the seeder made an error, and that the data on this page is easily crawlable by the Internet Archive, **and also** has no particular intrinsic value as a separate collection. See [these](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
+   - `Do not harvest`. Check this box if you think the seeder made an error, and that the data on this page is easily crawlable by the Internet Archive, **and also** has no particular intrinsic value as a separate collection. See [these](https://docs.google.com/document/d/1PeWefW2toThs-Pbw0CMv2us7wxQI0gRrP1LGuwMp_UQ/edit)
 [two documents](https://docs.google.com/document/d/1qpuNCmBmu4KcsS_hE2srewcCiP4f9P5cCyDfHmsSAVU/edit) for more info on the IA webcrawler. 
-- `Page contains dynamic content (e.g., links loaded by JavaScript).` Click this box if page content is generated within the browser environment by some kind of web application.  
-- `Page contains interactive visualizations.` Click this box for complex UI such as maps, etc.
+   - `Page contains dynamic content (e.g., links loaded by JavaScript).` Click this box if page content is generated within the browser environment by some kind of web application.  
+   - `Page contains interactive visualizations.` Click this box for complex UI such as maps, etc.
    - `Data is accessible in structured file(s) that can be directly downloaded.` Click this box for document collections, etc.
    - `Data is accessible over FTP.` Click this box to remove the URL from the workflow, and send it to the Internet Archive for their FTP crawl.
    - `Data is accessible using a documented public API.` Describe API parameters if you can easily do so
